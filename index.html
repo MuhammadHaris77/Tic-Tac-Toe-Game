@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="game()">
+    <div class="container-fluid  p-5">
+        <div class="container    ">
+            <div>
+                <h1 class=" text-center  py-2">
+                    TIC TAC TOE GAME
+                    <br>
+                    <img src="./image/tic-tac-toa-logo.gif" class="text-white" width="50px" height="50px
+                    " alt="">
+                </h1>
+            </div>
+            <div class="text-center px-5 py-1 ">
+                <button class="btn btn-outline-light mx-2" onclick="startGame()" id="startgame" >Start Game</button>
+                <button class="btn btn-outline-light mx-2" onclick="resetGame()" >Reset Game</button>
+                
+            </div>
+            <div class="py-3" id="parent">
+                <table align="center"    >
+                    <tr >
+                        <td id="box-1" class="tr-td text-light" ></td>
+                        <td id="box-2" class="tr-td text-light" ></td>
+                        <td id="box-3" class="tr-td text-light" ></td>
+                    </tr>
+                    
+                    <tr >
+                        <td id="box-4" class="tr-td text-light"></td>
+                        <td id="box-5" class="tr-td text-light"></td>
+                        <td id="box-6" class="tr-td text-light"></td>
+                    </tr>
+                    
+                    <tr >
+                        <td id="box-7" class="tr-td text-light"></td>
+                        <td id="box-8" class="tr-td text-light"></td>
+                        <td id="box-9" class="tr-td text-light"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js" ></script>
+</body>
+</html>
